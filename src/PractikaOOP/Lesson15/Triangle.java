@@ -11,6 +11,11 @@ public class Triangle extends Figure implements getPerimetr,getHeight{
         this.point2 = point2;
         this.point3 = point3;
     }
+    @Override
+    public String toString(){
+        return "Треугольник с углами: 1("+point1
+                +")\n 2("+point2+")\n 3("+point3+")\n";
+    }
 
     @Override
     public double getArea() {
@@ -31,6 +36,7 @@ public class Triangle extends Figure implements getPerimetr,getHeight{
     public Point getPoint3(){
         return point3;
     }
+
 
     @Override
     public double Perimetr() {

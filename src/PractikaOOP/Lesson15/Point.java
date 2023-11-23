@@ -14,7 +14,10 @@ public class Point {
         double Point2=Math.pow(y- point.y,2);
         return Math.sqrt(Point1+Point2);
     }
-
+    @Override
+    public String toString(){
+        return "Точка с кординатами:\nX = "+x+"\nY= "+y;
+}
     public int getX() {
         return x;
     }

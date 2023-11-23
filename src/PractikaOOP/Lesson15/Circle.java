@@ -6,9 +6,14 @@ public class Circle extends Figure implements getPerimetr{
 private Point point;
 private double Radius;
 
-    public Circle(Point point, double radius) {
+    public Circle(Point point, double Radius) {
         this.point = point;
-        this.Radius = radius;
+        this.Radius = Radius;
+    }
+    @Override
+    public String toString(){
+        return "Круг, центр круга:\n"+point
+                +"\nРадиус = "+Radius;
     }
 
     @Override

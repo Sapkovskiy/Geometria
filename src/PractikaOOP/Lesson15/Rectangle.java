@@ -9,6 +9,11 @@ public class Rectangle extends Figure implements getPerimetr,getDiagonal{
         this.LeftDownPoint = LeftDownPoint;
         this.RightUpperPoint = RightUpperPoint;
     }
+    @Override
+    public String toString(){
+        return "Треугольник с углами:\nЛевый нижний("+LeftDownPoint
+                +")\nПравый верхний("+RightUpperPoint+")";
+    }
 
     @Override
     public double getArea() {
